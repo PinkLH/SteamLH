@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到steam</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/tab_min.css">
+    <script src="js/jQuery/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/userRegistLogin.js"></script>
+    <script src="js/插件/unslider.min.js"></script>
+    <script src="js/SeamlessRolling.js"></script>
+    <script src="js/插件/tab.min.js"></script>
+</head>
+
+<body>
+
+    <div class="login_close"><span class="iconfont">&#xe61a;</span></div>
+    <div class="login_main_box">
+        <div class="login_main">
+            <form action="JAVASCRIPT:VOID(0);" method="POST">
+                <div class="login_title">登&nbsp;录</div>
+                <div class="login_row">
+                    <div class="input_title">帐户名称</div>
+                    <input class="input_text" type="text" name="username" id="login_username">
+                </div>
+                <div class="login_row">
+                    <div class="input_title">密码</div>
+                    <input class="input_text" type="password" name="password" id="login_password">
+                </div>
+
+                <div class="login_btn_ctn">
+                    <input type="submit" value="登录" class="login_btn">
+                    <a id="goto_regist" href="JAVASCRIPT:Register();">注&nbsp;&nbsp;册</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="r_main">
+        <form action="JAVASCRIPT:VOID(0);" method="POST">
+            <div class="r_title">注&nbsp;册</div>
+            <span class="m_span">用户名：</span>
+            <div class="m_input"><input class="input_text" id="regist_username" type="text"></div>
+            <div class="m_tip n1">用户名有5-15位,由数字,字母和下划线组成(首位为字母或下划线)</div>
+
+            <span class="m_span n2">登录密码：</span>
+            <div class="m_input n2"><input class="input_text" id="regist_password" type="password"></div>
+            <div class="m_tip n2 m_tip2">密码为6-20位,只能是数字,字母(不分大小写)和下划线任意两种</div>
+
+            <span class="m_span n3">重复登录密码：</span>
+            <div class="m_input n3"><input class="input_text" id="regist_rpassword" type="password"></div>
+            <div class="m_tip n3">请再次输入密码</div>
+
+            <span class="m_span n4">性别：</span>
+            <div class="m_input n4"><input class="sex" name="sex" type="radio"><span>男</span><input class="sex" name="sex" type="radio"><span>女</span></div>
+            <div class="m_tip n4">请选择性别(不能为空)</div>
+
+            <span class="m_span n5">真实姓名：</span>
+            <div class="m_input n5"><input class="input_text" id="name" type="text"></div>
+            <div class="m_tip n5">请输入您的姓名(必须是中文名)</div>
+
+            <span class="m_span n6">昵称：</span>
+            <div class="m_input n6"><input class="input_text" id="nickname" type="text"></div>
+            <div class="m_tip n6">请输入昵称(不能为空)</div>
+
+            <span class="m_span n7">关联手机号：</span>
+            <div class="m_input n7"><input class="input_text" id="tel" type="text"></div>
+            <div class="m_tip n7">请输入关联手机号(不能为空)</div>
+
+            <span class="m_span n8">保存邮箱：</span>
+            <div class="m_input n8"><input class="input_text" id="mail" type="text"></div>
+            <div class="m_tip n8">请输入邮箱(不能为空)</div>
+
+            <span class="m_span n9">所在地区：</span><select class="m_input n9 input_text" id="province">
+                <option>请选择省份</option>
+            </select>
+            <div class="m_tip n9">请选择省份和城市(不能为空)</div>
+
+            <span class="m_span n10">城市：</span><select class="m_input n10 input_text" id="city">
+                <option>请选择城市</option>
+            </select>
+
+            <div class="m_input n11">
+                <input id="regist" class="m_submit" type="submit" value="注册">
+                <a id="goto_login" href="JAVASCRIPT:Login();">登&nbsp;&nbsp;录</a>
+            </div>
+
+        </form>
+    </div>
+
+
+    <div class="login_bg"></div>
+    <header>
+        <div class="dailydeal_desc dailydeal_desc1">
+            <div style="width: 270px;">本次优惠于2022年8月1日14:00结束</div>
+            <div style="float: left;">剩余时间</div>
+            <div class="dailydeal_countdown" style="float: left;"></div>
+        </div>
+        <div class="h-main">
+            <div class="logo"></div>
+            <ul class="h-daohang">
+                <li class="a-shangd">
+                    <a href="JAVASCRIPT:VOID(0);">商店</a>
+                    <ul class="h-shangd">
+                        <li><a href="JAVASCRIPT:VOID(0);">主页</a></li>
+                        <li><a href="JAVASCRIPT:VOID(0);">探索队列</a></li>
+                        <li><a href="JAVASCRIPT:VOID(0);">愿望单</a></li>
+                        <li><a href="JAVASCRIPT:VOID(0);">点数商店</a></li>
+                        <li><a href="JAVASCRIPT:VOID(0);">新闻</a></li>
+                        <li><a href="JAVASCRIPT:VOID(0);">统计数据</a></li>
+                    </ul>
+                </li>
+                <li class="a-sheq">
+                    <a href="JAVASCRIPT:VOID(0);">社区</a>
+                    <ul class="h-sheq">
+                        <li><a href="JAVASCRIPT:VOID(0);">主页</a></li>
+                        <li><a href="JAVASCRIPT:VOID(0);">讨论</a></li>
+                        <li><a href="JAVASCRIPT:VOID(0);">创意工坊</a></li>
+                        <li><a href="JAVASCRIPT:VOID(0);">市场</a></li>
+                        <li><a href="JAVASCRIPT:VOID(0);">实况直播</a></li>
+                    </ul>
+                </li>
+                <li><a href="JAVASCRIPT:VOID(0);">关于</a></li>
+                <li><a href="JAVASCRIPT:VOID(0);">客服</a></li>
+            </ul>
+            <ul class="h-r-top">
+                <li class="rt1">
+                    <img src="images/btn_header_installsteam_download.png" alt="图片无法显示">
+                    <a href="JAVASCRIPT:VOID(0);" class="rt1-a">&nbsp;安装 Steam&nbsp;</a>
+                </li>
+                <li class="rt2"><a href="JAVASCRIPT:Login();" class="rt2-a" id="login">登录</a></li>
+                <li class="rt3">&nbsp;|&nbsp;</li>
+                <li class="rt4">
+                    <a href="JAVASCRIPT:VOID(0);" class="rt4-a">语言</a>
+                    <div class="rt4-img"></div>
+                    <ul class="rt4_menu">
+                        <li><a class="rt4_menu_item" href="JAVASCRIPT:VOID(0);">繁體中文（繁体中文）</a></li>
+                        <li><a class="rt4_menu_item" href="JAVASCRIPT:VOID(0);">日本語（日语）</a></li>
+                        <li><a class="rt4_menu_item" href="JAVASCRIPT:VOID(0);">한국어（韩语）</a></li>
+                        <li><a class="rt4_menu_item" href="JAVASCRIPT:VOID(0);">ไทย（泰语）</a></li>
+                        <li><a class="rt4_menu_item" href="JAVASCRIPT:VOID(0);">български（保加利亚语）</a></li>
+                        <li><a class="rt4_menu_item" href="JAVASCRIPT:VOID(0);">Čeština（捷克语）</a></li>
+                        <li><a class="rt4_menu_item" href="JAVASCRIPT:VOID(0);">Dansk（丹麦语）</a></li>
+                        <li><a class="rt4_menu_item" href="JAVASCRIPT:VOID(0);">Deutsch（德语）</a></li>
+                        <li><a class="rt4_menu_item" href="JAVASCRIPT:VOID(0);">English（英语）</a></li>
+                        <li><a class="rt4_menu_item" href="JAVASCRIPT:VOID(0);">Español-España（西班牙语 - 西班牙）</a></li>
+                        <li><a class="rt4_menu_item" href="JAVASCRIPT:VOID(0);">Español - Latinoamérica（西班牙语-拉丁美洲）</a>
+                        </li>
+                        <li><a class="rt4_menu_item" href="JAVASCRIPT:VOID(0);">Ελληνικά（希腊语）</a></li>
+                        <li><a class="rt4_menu_item" href="JAVASCRIPT:VOID(0);">Français（法语）</a></li>
+                        <li><a class="rt4_menu_item" href="JAVASCRIPT:VOID(0);">Italiano（意大利语）</a></li>
+                        <li><a class="rt4_menu_item" href="JAVASCRIPT:VOID(0);">Magyar（匈牙利语）</a></li>
+                        <li><a class="rt4_menu_item" href="JAVASCRIPT:VOID(0);">Nederlands（荷兰语）</a></li>
+                        <li><a class="rt4_menu_item" href="JAVASCRIPT:VOID(0);">帮助我们翻译 Steam</a></li>
+                    </ul>
+                </li>
+                <li class="rt5" style="display: none;">&nbsp;|&nbsp;</li>
+                <li class="rt6" style="display: none;">欢迎您&nbsp;<span></span>&nbsp;！</li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <a href="javascript:void();" id="login1"><span class="iconfont ico_top">&#xe76c;</span>顶部</a>
+        <div class="m-nav">
+            <ul class="m-nav-l">
+                <li class="nav-shop">
+                    <a href="JAVASCRIPT:VOID(0);">您的商店</a>
+                    <img src="images/btn_arrow_down_padded.png" alt="图片无法显示">
+                    <div class="nav_menu">
+                        <a class="nav_menu_item" href="JAVASCRIPT:VOID(0);">
+                            <p>主页</p>
+                        </a>
+                        <div class="hr"></div>
+                        <a class="nav_menu_item" href="JAVASCRIPT:VOID(0);">
+                            <p>社区推荐</p>
+                        </a>
+                        <a class="nav_menu_item" href="JAVASCRIPT:VOID(0);">
+                            <p>最近已查看</p>
+                        </a>
+                        <a class="nav_menu_item" href="JAVASCRIPT:VOID(0);">
+                            <p>Steam 鉴赏家</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-liu">
+                    <a href="JAVASCRIPT:VOID(0);">浏览</a>
+                    <img src="images/btn_arrow_down_padded.png" alt="图片无法显示">
+                    <div class="nav_menu">
+                        <a class="nav_menu_item" href="JAVASCRIPT:VOID(0);">
+                            <p>免费游玩</p>
+                        </a>
+                        <a class="nav_menu_item" href="JAVASCRIPT:VOID(0);">
+                            <p>抢先体验</p>
+                        </a>
+                        <a class="nav_menu_item" href="JAVASCRIPT:VOID(0);">
+                            <p>试玩</p>
+                        </a>
+                        <a class="nav_menu_item" href="JAVASCRIPT:VOID(0);">
+                            <p>支持控制器</p>
+                        </a>
+                        <a class="nav_menu_item" href="JAVASCRIPT:VOID(0);">
+                            <p>网吧游戏</p>
+                        </a>
+                        <a class="nav_menu_item" href="JAVASCRIPT:VOID(0);">
+                            <p>远程畅玩</p>
+                        </a>
+                    </div>
+                </li>
+                <li><a href="JAVASCRIPT:VOID(0);">点数商店</a></li>
+                <li><a href="JAVASCRIPT:VOID(0);">新闻</a></li>
+                <li><a href="JAVASCRIPT:VOID(0);">Steam实验室</a></li>
+            </ul>
+            <div class="nav-search">
+                <form action="">
+                    <div class="nav-searchbox">
+                        <input type="text" placeholder="搜索商店">
+                    </div>
+                    <a href="JAVASCRIPT:VOID(0);" class="search-a">
+                        <img src="images/blank.gif" alt="图片无法显示">
+                    </a>
+                </form>
+            </div>
+        </div>
+        <div class="m-l">
+            <img src="images/steamcards_promo_02.png" alt="图片无法显示">
+            <div class="m-l-block">
+                <div class="ml_header">
+                    礼物卡
+                </div>
+                <div class="ml_items">
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);">现已在 Steam 上推出</a>
+                </div>
+                <div class="ml_header">推荐</div>
+                <div class="ml_items">
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);"><span class="icon friends"></span> 由好友推荐</a>
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);"><span class="icon curators"></span> 由鉴赏家推荐</a>
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);"><span class="icon tags"></span> 标签</a>
+                </div>
+
+                <div class="ml_header pad">探索队列</div>
+                <div class="ml_items">
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);"><span class="icon queue"></span> 推荐</a>
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);"><span class="icon queue_new"></span> 新品</a>
+                </div>
+
+                <div class="ml_header pad">浏览分类</div>
+                <div class="ml_items">
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);"><span class="icon top_sellers"></span> 热销商品</a>
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);"><span class="icon recent"></span> 新品</a>
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);"><span class="icon upcoming"></span> 即将推出</a>
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);"><span class="icon discounts"></span> 优惠</a>
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);"><span class="icon vr"></span> 虚拟现实</a>
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);"><span class="icon controller"></span> 支持控制器</a>
+                </div>
+            </div>
+            <div class="m-l-block">
+                <div class="ml_header">按类型浏览</div>
+                <div class="ml_items">
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);">免费游玩</a>
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);">休闲</a>
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);">体育</a>
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);">冒险</a>
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);">动作</a>
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);">大型多人在线</a>
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);">模拟</a>
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);">独立</a>
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);">竞速</a>
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);">策略</a>
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);">角色扮演</a>
+
+                </div>
+
+                <div class="ml_header pad">最近查看</div>
+                <div class="ml_items">
+                    <a class="ml_item" href="JAVASCRIPT:VOID(0);">Morbid: The Seven Acolytes</a>
+                </div>
+            </div>
+
+
+
+            <div id="mooc">
+                <div id="moocBox">
+                    <ul>
+                        <li><a href="JAVASCRIPT:VOID(0);">赛博朋克2077正在热销！！</a><span>2021-06-18</span></li>
+                        <li><a href="JAVASCRIPT:VOID(0);">荒野大镖客2获年度最佳剧情奖！</a><span>2021-06-18</span></li>
+                        <li><a href="JAVASCRIPT:VOID(0);">参与社区讨论有机率获大奖！！</a><span>2021-06-19</span></li>
+                        <li><a href="JAVASCRIPT:VOID(0);">社区开启抽奖，快来抽奖吖！</a><span>2021-06-19</span></li>
+                        <li><a href="JAVASCRIPT:VOID(0);">今日送出"GTAV"10份！</a><span>2021-06-19</span></li>
+                        <li><a href="JAVASCRIPT:VOID(0);">毕业季大促销开始啦！</a><span>2021-06-22</span></li>
+                        <li><a href="JAVASCRIPT:VOID(0);">今日购买游戏还有额外福利！</a><span>2021-06-22</span></li>
+                        <li><a href="JAVASCRIPT:VOID(0);">促销最高减92%！</a><span>2021-06-23</span></li>
+                        <li><a href="JAVASCRIPT:VOID(0);">新手引导</a><span>2021-06-24</span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="game-ltr Carousel1-nav c1l">
+            <div class="game-ltr-img"></div>
+        </div>
+        <div class="game-rtr Carousel1-nav c1r">
+            <div class="game-rtr-img"></div>
+        </div>
+        <div class="Carousel2-nav prev game-ltr c2l">
+            <div class="game-ltr-img"></div>
+        </div>
+        <div class="Carousel2-nav next game-rtr c2r">
+            <div class="game-rtr-img"></div>
+        </div>
+        <div class="game-thumbs thumbs1">
+            <div class="activethumb"></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="m-m1-1-main m-m1-1-main-bg shadow1"></div>
+        <div class="m-m1-1-main m-m1-1-main-bg shadow2"></div>
+        <div class="m-m1-1-main m-m1-1-main-bg shadow3"></div>
+        <div class="m-m1">
+            <h2 class="m-m1-h2 m-m1-h2-1">精 选 和 推 荐</h2>
+            <div class="m-m1-1 Carousel1">
+                <div class="m-m1-1-main item1">
+                    <a href="JAVASCRIPT:VOID(0);" class="game-a"><img src="images/game.jpg" alt="图片无法显示" class="game-img"></a>
+                    <div class="game-r">
+                        <div class="game-name">赛博朋克 2077</div>
+                    </div>
+                    <div class="game-num">
+                        <div class="game-num-2">
+                            <div></div>
+                        </div>
+                        <div class="game-num-1">
+                            <div></div>
+                        </div>
+                        <div class="game-num-4">
+                            <div></div>
+                        </div>
+                        <div class="game-num-3">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="game-reason">
+                        <div class="game-reason-font">立即载入</div>
+                        <div class="additional">
+                            <div>热销商品</div>
+                        </div>
+                    </div>
+                    <div class="game-money">¥ 298</div>
+                    <div class="game-platforms">
+                        <div class="game-platforms-img"></div>
+                    </div>
+                </div>
+
+
+                <div class="m-m1-1-main item1">
+                    <a href="JAVASCRIPT:VOID(0);" class="game-a"><img src="images/game2.jpg" alt="图片无法显示" class="game-img"></a>
+                    <div class="game-r">
+                        <div class="game-name game2">Red Dead Redemption 2</div>
+                    </div>
+                    <div class="game-num">
+                        <div class="game1-num-2">
+                            <div></div>
+                        </div>
+                        <div class="game1-num-1">
+                            <div></div>
+                        </div>
+                        <div class="game1-num-4">
+                            <div></div>
+                        </div>
+                        <div class="game1-num-3">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="game-reason">
+                        <div class="game-reason-font">现已推出</div>
+                        <div class="additional">
+                            <div>热销商品</div>
+                        </div>
+                    </div>
+                    <div class="game-money">¥ 249</div>
+                    <div class="game-platforms">
+                        <div class="game-platforms-img"></div>
+                    </div>
+                </div>
+
+
+                <div class="m-m1-1-main item1">
+                    <a href="Plants/Plants.html" class="game-a"><img src="images/game3.jpg" alt="图片无法显示" class="game-img"></a>
+                    <div class="game-r">
+                        <div class="game-name game2">Plants vs. Zombies GOTY Edition</div>
+                    </div>
+                    <div class="game-num">
+                        <div class="game2-num-2">
+                            <div></div>
+                        </div>
+                        <div class="game2-num-1">
+                            <div></div>
+                        </div>
+                        <div class="game2-num-4">
+                            <div></div>
+                        </div>
+                        <div class="game2-num-3">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="game-reason">
+                        <div class="game-reason-font">现已推出</div>
+                        <div class="additional">
+                            <div>热销商品</div>
+                        </div>
+                    </div>
+                    <div class="m-spotlight_price game2-price">
+                        <div class="discount_pct game2-pct">-62%</div>
+                        <div class="discount_prices game2-discount_prices">
+                            <div class="discount_original_price game2-discount_original_price">¥ 21</div>
+                            <div class="discount_final_price game2-discount_final_price">¥ 8</div>
+                        </div>
+                    </div>
+                    <div class="game-platforms">
+                        <div class="game-platforms-img"></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <h2 class="m-m1-h2 m-m1-h2-2">特 别 优 惠</h2>
+            <div class="m-m1-1 Carousel2" id="b04" style="width: 955px;">
+                <ul>
+                    <li class="m-m1-2-main item2">
+                        <div class="m-m1-2-game">
+                            <img src="images/spotlight_image_english (2).jpg" alt="图片无法显示">
+                            <div class="m-m1-2-game-money">
+                                <div class="game-money-d">
+                                    <h2>疯狂特辑</h2>
+                                    <div class="m-spotlight_body">优惠截止时间：8月1日14:00</div>
+                                    <div class="m-spotlight_price">
+                                        <div class="discount_pct">-26%</div>
+                                        <div class="discount_prices">
+                                            <div class="discount_original_price">¥ 98</div>
+                                            <div class="discount_final_price">¥ 73</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-m1-2-game">
+                            <img src="images/spotlight_image_english (3).jpg" alt="图片无法显示">
+                            <div class="m-m1-2-game-money">
+                                <div class="game-money-d">
+                                    <h2>疯狂特辑</h2>
+                                    <div class="m-spotlight_body">优惠截止时间：8月1日14:00</div>
+                                    <div class="m-spotlight_price">
+                                        <div class="discount_pct">-20%</div>
+                                        <div class="discount_prices">
+                                            <div class="discount_original_price">¥ 90</div>
+                                            <div class="discount_final_price">¥ 72</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-m1-3-game">
+                            <img src="images/header.jpg" style="width: 100%;height: 120px;" alt="图片无法显示">
+                            <div class="m-m1-2-game-money money">
+                                <div class="game-money-d">
+                                    <div style="float: left;margin-top: 6px;color: #eee;">今日特惠！</div>
+                                    <div class="m-spotlight_price m-spotlight-1">
+                                        <div class="discount_pct discount_pct2">最高可省92%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-m1-3-game">
+                            <img src="images/header_292x136.jpg" style="width: 100%;height: 120px;" alt="图片无法显示">
+                            <div class="m-m1-2-game-money money">
+                                <div class="game-money-d">
+                                    <div class="m-spotlight_price m-spotlight-1">
+                                        <div class="discount_pct discount_pct2">-64%</div>
+                                        <div class="discount_prices discount_prices2">
+                                            <div class="discount_original_price">¥ 220</div>
+                                            <div class="discount_final_price">¥ 173.14</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-m1-2-main item2">
+                        <div class="m-m1-2-game">
+                            <img src="images/spotlight_image_english.jpg" alt="图片无法显示">
+                            <div class="m-m1-2-game-money">
+                                <div class="game-money-d">
+                                    <h2>疯狂特辑</h2>
+                                    <div class="m-spotlight_body">优惠截止时间：8月1日14:00</div>
+                                    <div class="m-spotlight_price">
+                                        <div class="discount_pct">-26%</div>
+                                        <div class="discount_prices">
+                                            <div class="discount_original_price">¥ 98</div>
+                                            <div class="discount_final_price">¥ 73</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-m1-2-game">
+                            <img src="images/spotlight_image_english (1).jpg" alt="图片无法显示">
+                            <div class="m-m1-2-game-money">
+                                <div class="game-money-d">
+                                    <h2>疯狂特辑</h2>
+                                    <div class="m-spotlight_body">优惠截止时间：8月1日14:00</div>
+                                    <div class="m-spotlight_price">
+                                        <div class="discount_pct">-20%</div>
+                                        <div class="discount_prices">
+                                            <div class="discount_original_price">¥ 90</div>
+                                            <div class="discount_final_price">¥ 72</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-m1-2-game">
+                            <img src="images/spotlight_image_schinese.png" alt="图片无法显示">
+                            <div class="m-m1-2-game-money">
+                                <div class="game-money-d">
+                                    <h2>疯狂特辑</h2>
+                                    <div class="m-spotlight_body">优惠截止时间：8月1日14:00</div>
+                                    <div class="m-spotlight_price">
+                                        <div class="discount_pct">-20%</div>
+                                        <div class="discount_prices">
+                                            <div class="discount_original_price">¥ 99</div>
+                                            <div class="discount_final_price">¥ 79</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="m-m1-2-main item2">
+                        <div class="m-m1-3-game">
+                            <img src="images/header1.jpg" style="width: 100%;height: 120px;" alt="图片无法显示">
+                            <div class="m-m1-2-game-money money">
+                                <div class="game-money-d">
+                                    <div class="m-spotlight_price m-spotlight-1">
+                                        <div class="discount_pct discount_pct2">-75%</div>
+                                        <div class="discount_prices discount_prices2">
+                                            <div class="discount_original_price">¥ 398</div>
+                                            <div class="discount_final_price">¥ 99</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-m1-3-game">
+                            <img src="images/header2.jpg" style="width: 100%;height: 120px;" alt="图片无法显示">
+                            <div class="m-m1-2-game-money money">
+                                <div class="game-money-d">
+                                    <div class="m-spotlight_price m-spotlight-1">
+                                        <div class="discount_pct discount_pct2">-70%</div>
+                                        <div class="discount_prices discount_prices2">
+                                            <div class="discount_original_price">¥ 298</div>
+                                            <div class="discount_final_price">¥ 89</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-m1-3-game">
+                            <img src="images/header3.jpg" style="width: 100%;height: 120px;" alt="图片无法显示">
+                            <div class="m-m1-2-game-money money">
+                                <div class="game-money-d">
+                                    <div class="m-spotlight_price m-spotlight-1">
+                                        <div class="discount_pct discount_pct2">-21%</div>
+                                        <div class="discount_prices discount_prices2">
+                                            <div class="discount_original_price">¥ 42</div>
+                                            <div class="discount_final_price">¥ 33</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-m1-3-game">
+                            <img src="images/header4.jpg" style="width: 100%;height: 120px;" alt="图片无法显示">
+                            <div class="m-m1-2-game-money money">
+                                <div class="game-money-d">
+                                    <div class="m-spotlight_price m-spotlight-1">
+                                        <div class="discount_pct discount_pct2">-75%</div>
+                                        <div class="discount_prices discount_prices2">
+                                            <div class="discount_original_price">¥ 268</div>
+                                            <div class="discount_final_price">¥ 67</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-m1-3-game">
+                            <img src="images/header5.jpg" style="width: 100%;height: 120px;" alt="图片无法显示">
+                            <div class="m-m1-2-game-money money">
+                                <div class="game-money-d">
+                                    <div class="m-spotlight_price m-spotlight-1">
+                                        <div class="discount_pct discount_pct2">-67%</div>
+                                        <div class="discount_prices discount_prices2">
+                                            <div class="discount_original_price">¥ 298</div>
+                                            <div class="discount_final_price">¥ 98</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-m1-3-game">
+                            <img src="images/header6.jpg" style="width: 100%;height: 120px;" alt="图片无法显示">
+                            <div class="m-m1-2-game-money money">
+                                <div class="game-money-d">
+                                    <div class="m-spotlight_price m-spotlight-1">
+                                        <div class="discount_pct discount_pct2">-50%</div>
+                                        <div class="discount_prices discount_prices2">
+                                            <div class="discount_original_price">¥ 249</div>
+                                            <div class="discount_final_price">¥ 124.50</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="m-m1-h2 m-m1-h2-3 m-m1-h2-3-1">
+                社 区 推 荐
+            </div>
+            <div class="m-m1-h2 m-m1-h2-3 m-m1-h2-3-2">
+                玩 家 推 荐
+            </div>
+            <div class="m-m1-1 Carousel3">
+
+                <div class="m-m1-1-main Carousel3-1">
+                    <a href="Plants/Plants.html" class="game-a"><img src="images/game3.jpg" alt="图片无法显示" class="game-img"></a>
+                    <div class="game-r">
+                        <div class="game-name game2">Plants vs. Zombies GOTY Edition</div>
+                    </div>
+                    <div class="game-num">
+                        <div class="game2-num-2">
+                            <div></div>
+                        </div>
+                        <div class="game2-num-1">
+                            <div></div>
+                        </div>
+                        <div class="game2-num-4">
+                            <div></div>
+                        </div>
+                        <div class="game2-num-3">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="game-reason">
+                        <div class="game-reason-font">现已推出</div>
+                        <div class="additional">
+                            <div>热销商品</div>
+                        </div>
+                    </div>
+                    <div class="dailydeal_desc">
+                        <div style="float: left;">剩余时间</div>
+                        <div class="dailydeal_countdown" style="float: left;"></div>
+                    </div>
+                    <div class="m-spotlight_price game2-price">
+                        <div class="discount_pct game2-pct">-62%</div>
+                        <div class="discount_prices game2-discount_prices">
+                            <div class="discount_original_price game2-discount_original_price">¥ 21</div>
+                            <div class="discount_final_price game2-discount_final_price">¥ 8</div>
+                        </div>
+                    </div>
+                    <div class="game-platforms">
+                        <div class="game-platforms-img"></div>
+                    </div>
+                </div>
+
+                <div class="m-m1-1-main Carousel3-2">
+                    <a href="JAVASCRIPT:VOID(0);" class="game-a"><img src="images/game.jpg" alt="图片无法显示" class="game-img"></a>
+                    <div class="game-r">
+                        <div class="game-name">赛博朋克 2077</div>
+                    </div>
+                    <div class="game-num">
+                        <div class="game-num-2">
+                            <div></div>
+                        </div>
+                        <div class="game-num-1">
+                            <div></div>
+                        </div>
+                        <div class="game-num-4">
+                            <div></div>
+                        </div>
+                        <div class="game-num-3">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="game-reason">
+                        <div class="game-reason-font">立即载入</div>
+                        <div class="additional">
+                            <div>热销商品</div>
+                        </div>
+                    </div>
+                    <div class="game-money">¥ 298</div>
+                    <div class="game-platforms">
+                        <div class="game-platforms-img"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="rowa">
+                <div class="boxa" id="boxa">
+                    <div class="boxa1" id="boxa1">
+                        <img src="images/lunbo_1.jpg" width="200px" height="150px" />
+                        <img src="images/lunbo_2.jpg" width="200px" height="150px" />
+                        <img src="images/lunbo_3.jpg" width="200px" height="150px" />
+
+                    </div>
+                    <div class="boxa2" id="boxa2">
+                        <img src="images/lunbo_1.jpg" width="200px" height="150px" />
+                        <img src="images/lunbo_2.jpg" width="200px" height="150px" />
+                        <img src="images/lunbo_3.jpg" width="200px" height="150px" />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tab_min_box">
+                <div class="desc desc-list">
+
+                    <div class="industry first active">
+                        <span>剧情</span>
+                    </div>
+
+                    <div class="industry">
+                        <span>经典</span>
+                    </div>
+
+                    <div class="industry">
+                        <span>推荐</span>
+                    </div>
+
+                </div>
+                <div class="case-container">
+
+                    <div class="case-panel tab-1 active">
+                        <div class="m-m1-1-main">
+                            <a href="JAVASCRIPT:VOID(0);" class="game-a"><img src="images/game2.jpg" alt="图片无法显示" class="game-img"></a>
+                            <div class="game-r">
+                                <div class="game-name game2">Red Dead Redemption 2</div>
+                            </div>
+                            <div class="game-num">
+                                <div class="game1-num-2">
+                                    <div></div>
+                                </div>
+                                <div class="game1-num-1">
+                                    <div></div>
+                                </div>
+                                <div class="game1-num-4">
+                                    <div></div>
+                                </div>
+                                <div class="game1-num-3">
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="game-reason">
+                                <div class="game-reason-font">现已推出</div>
+                                <div class="additional">
+                                    <div>热销商品</div>
+                                </div>
+                            </div>
+                            <div class="game-money">¥ 249</div>
+                            <div class="game-platforms">
+                                <div class="game-platforms-img"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="case-panel tab-2">
+
+                        <div class="m-m1-1-main">
+                            <a href="Plants/Plants.html" class="game-a"><img src="images/game3.jpg" alt="图片无法显示" class="game-img"></a>
+                            <div class="game-r">
+                                <div class="game-name game2">Plants vs. Zombies GOTY Edition</div>
+                            </div>
+                            <div class="game-num">
+                                <div class="game2-num-2">
+                                    <div></div>
+                                </div>
+                                <div class="game2-num-1">
+                                    <div></div>
+                                </div>
+                                <div class="game2-num-4">
+                                    <div></div>
+                                </div>
+                                <div class="game2-num-3">
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="game-reason">
+                                <div class="game-reason-font">现已推出</div>
+                                <div class="additional">
+                                    <div>热销商品</div>
+                                </div>
+                            </div>
+                            <div class="m-spotlight_price game2-price">
+                                <div class="discount_pct game2-pct">-62%</div>
+                                <div class="discount_prices game2-discount_prices">
+                                    <div class="discount_original_price game2-discount_original_price">¥ 21</div>
+                                    <div class="discount_final_price game2-discount_final_price">¥ 8</div>
+                                </div>
+                            </div>
+                            <div class="game-platforms">
+                                <div class="game-platforms-img"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="case-panel tab-3">
+                        <div class="m-m1-2-main">
+                            <div class="m-m1-3-game">
+                                <img src="images/header1.jpg" style="width: 100%;height: 120px;" alt="图片无法显示">
+                                <div class="m-m1-2-game-money money">
+                                    <div class="game-money-d">
+                                        <div class="m-spotlight_price m-spotlight-1">
+                                            <div class="discount_pct discount_pct2">-75%</div>
+                                            <div class="discount_prices discount_prices2">
+                                                <div class="discount_original_price">¥ 398</div>
+                                                <div class="discount_final_price">¥ 99</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-m1-3-game">
+                                <img src="images/header2.jpg" style="width: 100%;height: 120px;" alt="图片无法显示">
+                                <div class="m-m1-2-game-money money">
+                                    <div class="game-money-d">
+                                        <div class="m-spotlight_price m-spotlight-1">
+                                            <div class="discount_pct discount_pct2">-70%</div>
+                                            <div class="discount_prices discount_prices2">
+                                                <div class="discount_original_price">¥ 298</div>
+                                                <div class="discount_final_price">¥ 89</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-m1-3-game">
+                                <img src="images/header3.jpg" style="width: 100%;height: 120px;" alt="图片无法显示">
+                                <div class="m-m1-2-game-money money">
+                                    <div class="game-money-d">
+                                        <div class="m-spotlight_price m-spotlight-1">
+                                            <div class="discount_pct discount_pct2">-21%</div>
+                                            <div class="discount_prices discount_prices2">
+                                                <div class="discount_original_price">¥ 42</div>
+                                                <div class="discount_final_price">¥ 33</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-m1-3-game">
+                                <img src="images/header4.jpg" style="width: 100%;height: 120px;" alt="图片无法显示">
+                                <div class="m-m1-2-game-money money">
+                                    <div class="game-money-d">
+                                        <div class="m-spotlight_price m-spotlight-1">
+                                            <div class="discount_pct discount_pct2">-75%</div>
+                                            <div class="discount_prices discount_prices2">
+                                                <div class="discount_original_price">¥ 268</div>
+                                                <div class="discount_final_price">¥ 67</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-m1-3-game">
+                                <img src="images/header5.jpg" style="width: 100%;height: 120px;" alt="图片无法显示">
+                                <div class="m-m1-2-game-money money">
+                                    <div class="game-money-d">
+                                        <div class="m-spotlight_price m-spotlight-1">
+                                            <div class="discount_pct discount_pct2">-67%</div>
+                                            <div class="discount_prices discount_prices2">
+                                                <div class="discount_original_price">¥ 298</div>
+                                                <div class="discount_final_price">¥ 98</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-m1-3-game">
+                                <img src="images/header6.jpg" style="width: 100%;height: 120px;" alt="图片无法显示">
+                                <div class="m-m1-2-game-money money">
+                                    <div class="game-money-d">
+                                        <div class="m-spotlight_price m-spotlight-1">
+                                            <div class="discount_pct discount_pct2">-50%</div>
+                                            <div class="discount_prices discount_prices2">
+                                                <div class="discount_original_price">¥ 249</div>
+                                                <div class="discount_final_price">¥ 124.50</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <footer>
+        <div class="f-t">
+            <div class="f-t-page">
+                <div class="f-t-title">
+                    <span>正在寻找推荐？</span>
+                </div>
+            </div>
+            <div class="f-t-page">
+                <div class="f-t-page-2">
+                    <p>登录以查看个性化推荐</p>
+                    <div class="f-t-page-2-btn">
+                        <a class="f-t-page-2-btn-a" href="JAVASCRIPT:Login();" id="login2">
+                            <span>登录</span>
+                        </a>
+                        <br>
+                        <br> 或者
+                        <a href="JAVASCRIPT:Register();" id="login3">注册</a>并免费加入 Steam
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="small_footer">
+            <div class="footer_content">
+
+                <div class="rule"></div>
+                <div class="footer_logo_steam">
+                    <img src="images/logo_steam_footer.png" alt="图片无法显示">
+                </div>
+
+                <div class="footer_logo">
+                    <a href="JAVASCRIPT:VOID(0);" target="_blank" rel="noreferrer">
+                        <img src="images/footerLogo_valve_new.png" alt="图片无法显示">
+                    </a>
+                </div>
+                <div class="footer_text">
+                    <div>©2020 Valve Corporation。保留所有权利。所有商标均为其在美国及其它国家/地区的各自持有者所有。</div>
+                    <div>
+                        所有的价格均已包含增值税（如适用）。&nbsp;&nbsp;
+                        <a href="JAVASCRIPT:VOID(0);">隐私政策</a> &nbsp; | &nbsp;
+                        <a href="JAVASCRIPT:VOID(0);">法律信息</a> &nbsp; | &nbsp;
+                        <a href="JAVASCRIPT:VOID(0);">Steam 订户协议</a> &nbsp; | &nbsp;
+                        <a href="JAVASCRIPT:VOID(0);">退款</a>
+
+                    </div>
+                </div>
+                <div style="clear: left;"></div>
+                <br>
+                <div class="rule"></div>
+                <div class="valve_links">
+                    <a href="JAVASCRIPT:VOID(0);">关于 Valve</a> &nbsp; | &nbsp;
+                    <a href="JAVASCRIPT:VOID(0);">Steamworks</a> &nbsp; | &nbsp;
+                    <a href="JAVASCRIPT:VOID(0);">工作</a> &nbsp; | &nbsp;
+                    <a href="JAVASCRIPT:VOID(0);">Steam 分销</a> &nbsp; | &nbsp;
+                    <a href="JAVASCRIPT:VOID(0);">礼物卡</a> &nbsp; | &nbsp;
+                    <a href="JAVASCRIPT:VOID(0);"><img src="images/ico_facebook.gif"> Steam</a>
+                    &nbsp; | &nbsp;
+                    <a href="JAVASCRIPT:VOID(0);"><img src="images/ico_twitter.gif"> @steam</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,1382 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-color: #1b2838;
+}
+
+header {
+    position: relative;
+    background-color: #171a21;
+    height: 104px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-size: 14px;
+    z-index: 100;
+}
+
+#login1 {
+    display: none;
+    width: 60px;
+    height: 60px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    color: #ccc;
+}
+
+#login1:hover {
+    color: #000;
+    background-color: #eee
+}
+
+.h-main {
+    position: relative;
+    /* left: 330px; */
+    left: 50%;
+    width: 940px;
+    margin-left: -361px;
+    height: 104px;
+    /* margin: 0 auto; */
+}
+
+.h-main .logo {
+    float: left;
+    margin-top: 30px;
+    margin-right: 40px;
+    width: 176px;
+    height: 44px;
+    background: url(../images/logo_steam.svg) no-repeat center top;
+    background-size: cover;
+}
+
+.h-shangd,
+.h-sheq {
+    display: none;
+    margin-top: 6px;
+    width: 28px;
+}
+
+.h-shangd li {
+    width: 84px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #171a21;
+    padding-left: 15px;
+    padding-bottom: 6px;
+    box-shadow: 3px 3px 5px -3px #000;
+    font-size: 12px;
+}
+
+.h-shangd li a:hover {
+    color: #fff;
+}
+
+.h-sheq li {
+    width: 84px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #171a21;
+    padding-left: 15px;
+    padding-bottom: 6px;
+    box-shadow: 3px 3px 5px -3px #000;
+    font-size: 12px;
+}
+
+.h-sheq li a:hover {
+    color: #fff;
+}
+
+.h-daohang>li {
+    float: left;
+    margin-top: 45px;
+    margin-right: 10px;
+}
+
+.h-daohang>li a {
+    color: #b8b6b4;
+}
+
+.h-daohang>li a:hover {
+    color: #fff;
+}
+
+.h-daohang .a-shangd:hover .h-shangd {
+    display: block;
+}
+
+.h-daohang .a-sheq:hover .h-sheq {
+    display: block;
+}
+
+.h-r-top {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 5px;
+    width: 500px;
+    height: 21px;
+    line-height: 24px;
+    margin-right: 3px;
+}
+
+.rt1 {
+    float: right;
+    padding: 0px 9px 0px 10px;
+    background-color: #5c7e10;
+}
+
+.rt1 img {
+    vertical-align: middle;
+}
+
+.rt1 a {
+    color: #e5e4dc;
+    font-size: 11px;
+}
+
+.rt3 {
+    float: right;
+    color: #b8b6b4;
+}
+
+.rt2 {
+    float: right;
+    padding: 0px 10px 0px 4px;
+}
+
+.rt2 a {
+    color: #b8b6b4;
+    font-size: 11px;
+}
+
+.rt4 {
+    float: right;
+}
+
+.rt4-a {
+    float: left;
+    padding-left: 4px;
+    padding-top: 1px;
+    color: #b8b6b4;
+    font-size: 11px;
+}
+
+.rt4-img {
+    float: right;
+    width: 19px;
+    height: 12px;
+    margin-top: 7px;
+    background: url(../images/btn_arrow_down_padded.png) no-repeat;
+}
+
+.rt4_menu {
+    position: absolute;
+    width: 250px;
+    top: 27px;
+    border: 1px solid #171a21;
+    background-color: #171a21;
+    box-shadow: 0 0 12px #000000;
+    display: none;
+}
+
+.rt4_menu_item {
+    float: left;
+    padding: 5px 12px;
+    text-transform: none;
+    font-family: Motiva Sans, Arial, Helvectica, Verdana, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    color: #b8b6b4;
+}
+
+.rt4_menu_item:hover {
+    color: #fff;
+}
+
+.rt5 {
+    float: right;
+    color: #b8b6b4;
+}
+
+.rt6 {
+    float: right;
+    padding: 1px 4px 0px 10px;
+    color: #b8b6b4;
+    font-size: 11px;
+}
+
+.rt4-a:hover,
+.rt2-a:hover,
+.rt1-a:hover {
+    color: #fff;
+}
+
+.main {
+    position: relative;
+    z-index: 1;
+    background: url(../images/colored_body_top2.png) no-repeat center top #1b2838;
+    background-position: -400px 0px;
+    background-size: cover;
+}
+
+.m-nav {
+    position: absolute;
+    /* left: 350px; */
+    left: 50%;
+    right: 0;
+    top: 24px;
+    width: 940px;
+    margin-left: -361px;
+    height: 35px;
+    /* margin: 7px auto; */
+    background: rgba( 62, 126, 167, 0.8);
+    box-shadow: 0 0 3px rgba( 0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.m-nav li {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    font-size: 13px;
+    border-right: 1px solid rgba( 16, 21, 25, 0.3);
+}
+
+.m-nav li a {
+    color: #b8b6b4;
+}
+
+.m-nav li:hover {
+    background: linear-gradient( to bottom, #e3eaef 5%, #c7d5e0 95%);
+}
+
+.m-nav li:hover a {
+    color: #000;
+}
+
+.nav-shop:hover .nav_menu {
+    display: block;
+}
+
+.nav-liu:hover .nav_menu {
+    display: block;
+}
+
+.nav_menu {
+    position: absolute;
+    margin-left: -15px;
+    background-color: #c7d5e0;
+    padding: 8px 5px 8px 5px;
+    box-shadow: 0 0 12px #000000;
+    display: none;
+    z-index: 3;
+}
+
+.nav_menu .hr {
+    height: 1px;
+    margin: 5px 10px 5px 10px;
+    background-color: #fff;
+}
+
+.nav_menu_item {
+    display: block;
+    padding: 0 12px;
+    text-transform: none;
+    font-family: Motiva Sans, Arial, Helvectica, Verdana, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    color: #000;
+}
+
+.nav_menu_item:hover {
+    background-color: #212d3d;
+}
+
+.nav_menu_item:hover p {
+    color: #fff;
+}
+
+.nav-search {
+    float: right;
+}
+
+.nav-searchbox {
+    background-color: #316282;
+    border-radius: 3px;
+    border: 1px solid rgba( 0, 0, 0, 0.3);
+    box-shadow: 1px 1px 0px rgba( 255, 255, 255, 0.2);
+    color: #fff;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    height: 27px;
+    padding: 0px 6px;
+}
+
+.nav-searchbox:hover {
+    background-image: none;
+    border: 1px solid #4c9acc;
+    box-shadow: 1px 1px 0px rgba( 255, 255, 255, 0.0);
+}
+
+.nav-searchbox input {
+    border: none;
+    background-color: transparent;
+    margin-top: 2px;
+    margin-left: 8px;
+    width: 180px;
+    outline: none;
+    line-height: 26px;
+    color: #0e1c25;
+    font-size: 14px;
+    margin-top: 1px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.search-a img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    background-image: url(../images/search_icon_btn.png);
+}
+
+.m-l {
+    position: absolute;
+    /* left: 115px; */
+    left: 50%;
+    margin-left: -600px;
+    top: 17px;
+    width: 210px;
+    z-index: 4;
+    /* height: 1000px; */
+    /* margin: 7px auto; */
+}
+
+.m-l img {
+    width: 210px;
+    height: 116px;
+}
+
+.ml_header {
+    color: #c6d4df;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.ml_items {
+    margin-bottom: 14px;
+}
+
+.ml_item {
+    color: #66c0f4;
+    display: block;
+    font-size: 13px;
+    font-family: "Motiva Sans", Sans-serif;
+    line-height: 16px;
+    margin: 7px 0;
+}
+
+.icon.friends {
+    /* background-image: url(../store_menu_icons.png); */
+    background-image: url(../images/store_menu_icons.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 4px;
+}
+
+.icon.curators {
+    background-image: url(../images/store_menu_icons.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 4px;
+    background-position: -16px 0px;
+}
+
+.icon.tags {
+    background-image: url(../images/store_menu_icons.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 4px;
+    background-position: -32px 0px;
+}
+
+.icon.queue {
+    background-image: url(../images/store_menu_icons.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 4px;
+    background-position: -48px 0px;
+}
+
+.icon.queue_new {
+    background-image: url(../images/store_menu_icons.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 4px;
+    background-position: -64px 0px;
+}
+
+.icon.top_sellers {
+    background-image: url(../images/store_menu_icons.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 4px;
+    background-position: -80px 0px;
+}
+
+.icon.recent {
+    background-image: url(../images/store_menu_icons.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 4px;
+    background-position: -112px 0px;
+}
+
+.icon.upcoming {
+    background-image: url(../images/store_menu_icons.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 4px;
+    background-position: -128px 0px;
+}
+
+.icon.discounts {
+    background-image: url(../images/store_menu_icons.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 4px;
+    background-position: -144px 0px;
+}
+
+.icon.vr {
+    background-image: url(../images/store_menu_icons.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 4px;
+    background-position: -160px 0px;
+}
+
+.icon.controller {
+    background-image: url(../images/store_menu_icons.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 4px;
+    background-position: -176px 0px;
+}
+
+.ml_item:hover {
+    color: white;
+}
+
+.m-m1 {
+    position: relative;
+    width: 940px;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -361px;
+    height: 2100px;
+    z-index: 1;
+}
+
+.m-m1-1 {
+    position: absolute;
+    top: 135px;
+    width: 3000px;
+    height: 353px;
+    z-index: 2;
+    /* left: 50%;
+    margin-left: -361px; */
+}
+
+.Carousel2 {
+    top: 575px;
+    overflow: visible !important;
+}
+
+.Carousel3 {
+    top: 1015px;
+}
+
+.m-m1-1-main {
+    /* position: absolute; */
+    position: relative;
+    float: left;
+    width: 940px;
+    height: 353px;
+    background-color: #0c161f;
+}
+
+.m-m1-1-main-bg {
+    position: absolute;
+    width: 940px;
+    left: 50%;
+    margin-left: -361px;
+    box-shadow: 0 0 7px 0px #000;
+    /* background-color: #0c161f; */
+}
+
+.shadow1 {
+    top: 135px;
+}
+
+.shadow2 {
+    top: 575px;
+}
+
+.shadow3 {
+    top: 1015px;
+    box-shadow: 0 0 7px 0px #4c9acc;
+}
+
+.m-m1-h2 {
+    position: absolute;
+    font-family: "Motiva Sans", Sans-serif;
+    font-size: 14px;
+    font-size: small;
+    color: #fff;
+    margin: 0 0 10px;
+    padding-top: 2px;
+}
+
+.m-m1-h2-1 {
+    top: 105px;
+}
+
+.m-m1-h2-2 {
+    top: 545px;
+}
+
+.m-m1-h2-3 {
+    top: 990px;
+    padding: 3px 5px;
+    border-top: solid 1px #4c9acc;
+    border-left: solid 1px #4c9acc;
+    border-right: solid 1px #4c9acc;
+}
+
+.m-m1-h2-3:hover {
+    background-color: #4c9acc !important;
+}
+
+.m-m1-h2-3-1 {
+    background-color: #4c9acc;
+}
+
+.m-m1-h2-3-2 {
+    left: 73px;
+}
+
+.game-img {
+    box-shadow: 0 0 7px 0px #000;
+    width: 100%;
+    height: 100%;
+}
+
+.game-a {
+    float: left;
+    width: 616px;
+    height: 353px;
+}
+
+.game-name {
+    position: absolute;
+    right: 145px;
+    top: 18px;
+    color: white;
+    overflow: hidden;
+    font-size: 24px;
+    padding: 4px 6px;
+    line-height: 26px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    height: 69px;
+}
+
+.game2 {
+    right: 40px;
+    font-size: 18px;
+}
+
+.game-ltr {
+    position: absolute;
+    left: 50%;
+    margin-left: -406px;
+    padding: 36px 11px;
+    background: linear-gradient( to right, rgba( 0, 0, 0, 0.3) 5%, rgba( 0, 0, 0, 0) 95%);
+    z-index: 100;
+}
+
+.game-rtr {
+    position: absolute;
+    left: 50%;
+    margin-left: 579px;
+    padding: 36px 11px;
+    background: linear-gradient( to left, rgba( 0, 0, 0, 0.3) 5%, rgba( 0, 0, 0, 0) 95%);
+    z-index: 100;
+}
+
+.game-ltr:hover {
+    background: linear-gradient( to right, rgba( 255, 255, 255, 0.3) 5%, rgba( 0, 0, 0, 0) 95%);
+}
+
+.game-rtr:hover {
+    background: linear-gradient( to left, rgba( 255, 255, 255, 0.3) 5%, rgba( 0, 0, 0, 0) 95%);
+}
+
+.game-ltr-img {
+    background-image: url(../images/arrows.png);
+    background-position: 23px 0;
+    width: 23px;
+    height: 36px;
+}
+
+.game-rtr-img {
+    background-image: url(../images/arrows.png);
+    width: 23px;
+    height: 36px;
+}
+
+.Carousel1-nav {
+    top: 250px;
+}
+
+.Carousel2-nav {
+    top: 690px;
+}
+
+.Carousel3-nav {
+    top: 1130px;
+}
+
+.game-num {
+    width: 344px;
+    height: 164px;
+    display: inline-block;
+    margin-left: 5px;
+    top: 70px;
+    position: absolute;
+}
+
+.game-num>div {
+    width: 152px;
+    height: 69px;
+    margin: 10px 10px 0 0;
+    display: inline-block;
+}
+
+.game1-num-3 {
+    float: left;
+    background: url(../images/game2-3.jpg)no-repeat;
+    background-size: cover;
+}
+
+.game1-num-3 div {
+    height: 69px;
+    background-color: rgba( 0, 0, 0, 0.3);
+}
+
+.game1-num-3 div:hover {
+    background-color: rgba( 0, 0, 0, 0);
+}
+
+.game1-num-2 {
+    float: left;
+    background: url(../images/game2-1.jpg)no-repeat;
+    background-size: cover;
+}
+
+.game1-num-2 div {
+    height: 69px;
+    background-color: rgba( 0, 0, 0, 0.3);
+}
+
+.game1-num-2 div:hover {
+    background-color: rgba( 0, 0, 0, 0);
+}
+
+.game1-num-1 {
+    float: left;
+    background: url(../images/game2-2.jpg)no-repeat;
+    background-size: cover;
+}
+
+.game1-num-1 div {
+    height: 69px;
+    background-color: rgba( 0, 0, 0, 0.3);
+}
+
+.game1-num-1 div:hover {
+    background-color: rgba( 0, 0, 0, 0);
+}
+
+.game1-num-4 {
+    float: left;
+    background: url(../images/game2-4.jpg)no-repeat;
+    background-size: cover;
+}
+
+.game1-num-4 div {
+    height: 69px;
+    background-color: rgba( 0, 0, 0, 0.3);
+}
+
+.game1-num-4 div:hover {
+    background-color: rgba( 0, 0, 0, 0);
+}
+
+.game-num-3 {
+    float: left;
+    background: url(../images/game-3.jpg)no-repeat;
+    background-size: cover;
+}
+
+.game-num-3 div {
+    height: 69px;
+    background-color: rgba( 0, 0, 0, 0.3);
+}
+
+.game-num-3 div:hover {
+    background-color: rgba( 0, 0, 0, 0);
+}
+
+.game2-num-3 {
+    float: left;
+    background: url(../images/game3-3.jpg)no-repeat;
+    /* background-size: cover; */
+    background-size: contain;
+    background-position: 30px;
+}
+
+.game2-num-3 div {
+    height: 69px;
+    background-color: rgba( 0, 0, 0, 0.3);
+}
+
+.game2-num-3 div:hover {
+    background-color: rgba( 0, 0, 0, 0);
+}
+
+.game-num-1 {
+    float: left;
+    background: url(../images/game-1.jpg)no-repeat;
+    background-size: cover;
+}
+
+.game-num-1 div {
+    height: 69px;
+    background-color: rgba( 0, 0, 0, 0.3);
+}
+
+.game-num-1 div:hover {
+    background-color: rgba( 0, 0, 0, 0);
+}
+
+.game2-num-1 {
+    float: left;
+    background: url(../images/game3-1.jpg)no-repeat;
+    /* background-size: cover; */
+    background-size: contain;
+    background-position: 30px;
+}
+
+.game2-num-1 div {
+    height: 69px;
+    background-color: rgba( 0, 0, 0, 0.3);
+}
+
+.game2-num-1 div:hover {
+    background-color: rgba( 0, 0, 0, 0);
+}
+
+.game-num-2 {
+    background: url(../images/game-2.jpg)no-repeat;
+    background-size: cover;
+}
+
+.game-num-2 div {
+    height: 69px;
+    background-color: rgba( 0, 0, 0, 0.3);
+}
+
+.game-num-2 div:hover {
+    background-color: rgba( 0, 0, 0, 0);
+}
+
+.game2-num-2 {
+    background: url(../images/game3-2.jpg)no-repeat;
+    /* background-size: cover; */
+    background-size: contain;
+    background-position: 30px;
+}
+
+.game2-num-2 div {
+    height: 69px;
+    background-color: rgba( 0, 0, 0, 0.3);
+}
+
+.game2-num-2 div:hover {
+    background-color: rgba( 0, 0, 0, 0);
+}
+
+.game-num-4 {
+    background: url(../images/game-4.jpg)no-repeat;
+    background-size: cover;
+}
+
+.game-num-4 div {
+    height: 69px;
+    background-color: rgba( 0, 0, 0, 0.3);
+}
+
+.game-num-4 div:hover {
+    background-color: rgba( 0, 0, 0, 0);
+}
+
+.game2-num-4 {
+    background: url(../images/game3-4.jpg)no-repeat;
+    /* background-size: cover; */
+    background-size: contain;
+    background-position: 30px;
+}
+
+.game2-num-4 div {
+    height: 69px;
+    background-color: rgba( 0, 0, 0, 0.3);
+}
+
+.game2-num-4 div:hover {
+    background-color: rgba( 0, 0, 0, 0);
+}
+
+.game-reason {
+    position: absolute;
+    right: 224px;
+    top: 240px;
+    margin-top: 8px;
+    width: 84px;
+}
+
+.game-reason-font {
+    font-size: 21px;
+    font-weight: 200;
+    color: #fff;
+}
+
+.game-reason .additional {
+    margin: 3px 0;
+    display: inline-block;
+    margin-right: 14px;
+    line-height: 19px;
+    padding: 0 7px;
+    background-color: rgba( 255, 255, 255, 0.2);
+    margin-right: 2px;
+    border-radius: 2px;
+    margin-bottom: 3px;
+    margin-top: 5px;
+    font-size: 11px;
+    color: #fff;
+}
+
+.game-money {
+    position: absolute;
+    left: 632px;
+    bottom: 10px;
+    font-size: 11px;
+    color: #acdbf5;
+}
+
+.game-platforms {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.game-platforms-img {
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon_platform_win.png);
+}
+
+.game-thumbs {
+    position: absolute;
+    left: 50%;
+    margin-left: 84px;
+    /* padding: 36px 11px; */
+    z-index: 100;
+}
+
+.game-thumbs div {
+    display: inline-block;
+    width: 15px;
+    height: 9px;
+    border-radius: 2px;
+    background-color: hsla(202, 60%, 100%, 0.2);
+}
+
+.game-thumbs div:hover {
+    background-color: hsla(202, 60%, 100%, 0.3);
+}
+
+.activethumb {
+    background-color: hsla(202, 60%, 100%, 0.4) !important;
+}
+
+.thumbs1 {
+    top: 500px;
+}
+
+.thumbs2 {
+    top: 940px;
+}
+
+.thumbs3 {
+    top: 1380px;
+}
+
+.m-m1-2-main {
+    position: relative;
+    width: 955px;
+    height: 353px;
+    float: left;
+    /* box-shadow: 0 0 7px 0px #000; */
+}
+
+.m-m1-2-game {
+    float: left;
+    margin-right: 11px;
+    background-image: url(../images/background_spotlight.jpg);
+    background-size: cover;
+    width: 306px;
+    height: 353px;
+    box-shadow: 0 0 5px #000000;
+    position: relative;
+}
+
+.m-m1-3-game {
+    float: left;
+    margin-right: 11px;
+    margin-bottom: 13px;
+    background-image: url(../images/background_spotlight.jpg);
+    background-size: 20%;
+    width: 306px;
+    height: 170px;
+    box-shadow: 0 0 5px #000000;
+    position: relative;
+}
+
+.m-m1-2-game-money {
+    background-image: url(../images/background_spotlight.jpg);
+    background-position: 0 75%;
+    position: absolute;
+    bottom: 0;
+    width: 306px;
+    height: 113px;
+}
+
+.money {
+    height: 50px;
+}
+
+.m-spotlight_body {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    color: #acdbf5;
+    font-size: 12px;
+}
+
+.game-money-d {
+    position: absolute;
+    top: 8px;
+    left: 26px;
+}
+
+.game-money-d h2 {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    margin: 0 0 10px;
+    padding-top: 2px;
+}
+
+.dailydeal_desc {
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    right: -10px;
+    bottom: 54px;
+    margin-top: 8px;
+    width: 180px;
+    z-index: 5;
+}
+
+.dailydeal_desc1 {
+    right: 400px;
+    bottom: 15px;
+    border: solid 2px #4c9acc;
+    border-radius: 15px;
+    padding: 5px;
+    width: 222px;
+}
+
+.dailydeal_countdown {
+    display: inline-block;
+    color: #eee;
+    /* font-size: 14px; */
+    background-color: #4f95bd;
+    line-height: 13px;
+    padding: 0px 4px;
+    margin-top: 4px;
+}
+
+.m-spotlight_price {
+    margin-top: 10px;
+}
+
+.m-spotlight-1 {
+    margin-top: 1px;
+    padding-left: 62px;
+    width: 210px;
+}
+
+.game2-price {
+    position: absolute;
+    left: 632px;
+    bottom: 10px;
+    /* right: 200px;
+    bottom: 0; */
+}
+
+.discount_prices {
+    background-color: rgba(0, 0, 0, 0.6);
+    line-height: 13px;
+    margin-left: -4px;
+    padding: 4px 10px 4px 7px;
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: right;
+}
+
+.discount_prices2 {
+    float: right;
+}
+
+.game2-discount_prices {
+    line-height: 9px;
+    margin-bottom: -1px;
+}
+
+.discount_pct {
+    color: #a4d007;
+    background: #4c6b22;
+    display: inline-block;
+    line-height: 34px;
+    padding: 0 5px;
+    font-size: 26px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+}
+
+.discount_pct2 {
+    float: right;
+}
+
+.game2-pct {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.discount_original_price {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    text-decoration: line-through;
+    color: #7193a6;
+    font-size: 11px;
+}
+
+.game2-discount_original_price {
+    float: left;
+}
+
+.discount_final_price {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    color: #acdbf5;
+    font-size: 13px;
+}
+
+.game2-discount_final_price {
+    float: left;
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+.f-t {
+    background-color: #000;
+    padding: 25px 0;
+}
+
+.f-t-page {
+    padding-left: 234px;
+    position: relative;
+    width: 940px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.f-t-title {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    color: #67c1f5;
+    text-align: center;
+}
+
+.f-t-page-2 {
+    height: 130px;
+    padding-bottom: 36px;
+    background: rgba( 0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    font-size: 15px;
+    color: #8f98a0;
+    font-family: "Motiva Sans", Sans-serif;
+}
+
+.f-t-page-2-btn {
+    margin-top: 15px;
+}
+
+.f-t-page-2-btn-a {
+    padding: 1px;
+    display: inline-block;
+    color: #D2E885;
+    background: linear-gradient( to bottom, #a4d007 5%, #536904 95%);
+}
+
+.f-t-page-2-btn-a span {
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 30px;
+    border-radius: 3px;
+    display: block;
+    background: linear-gradient( to bottom, #799905 5%, #536904 95%);
+}
+
+.f-t-page-2-btn-a:hover span {
+    background: linear-gradient( to bottom, #a1bf07 5%, #80a006 95%);
+}
+
+.small_footer {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 0;
+    right: 0;
+    padding: 16px 0 60px 0;
+    margin: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.footer_content {
+    width: 940px;
+    margin: 0px auto;
+    padding-top: 16px;
+}
+
+.rule {
+    height: 8px;
+    border-top: 1px solid #363c44;
+}
+
+.footer_logo_steam {
+    float: right;
+    padding-top: 2px;
+}
+
+.footer_logo {
+    float: left;
+    padding-top: 2px;
+}
+
+.footer_logo img {
+    height: 25px;
+    width: auto;
+}
+
+.footer_text {
+    float: left;
+    margin-left: 12px;
+    color: #8F98A0;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.footer_text a {
+    color: #C6D4DF;
+}
+
+.footer_text a:hover {
+    color: #ffffff;
+}
+
+.rule {
+    height: 8px;
+    border-top: 1px solid #363c44;
+}
+
+.valve_links {
+    margin-top: 8px;
+    float: left;
+    font-family: "Motiva Sans", Sans-serif;
+    font-size: 13px;
+    color: #61686D;
+}
+
+.valve_links img {
+    vertical-align: bottom;
+}
+
+.valve_links a {
+    color: #C6D4DF;
+}
+
+.valve_links a:hover {
+    color: #ffffff;
+}
+
+#b04 {
+    width: 640px;
+}
+
+#b04 .dots {
+    position: absolute;
+    left: 50%;
+    margin-left: -34px;
+    bottom: -30px;
+    z-index: 100;
+}
+
+#b04 .dots li {
+    display: inline-block;
+    width: 15px;
+    height: 9px;
+    border-radius: 2px;
+    margin: 0 2px;
+    background-color: hsla(202, 60%, 100%, 0.2);
+}
+
+#b04 .dots li:hover {
+    background-color: hsla(202, 60%, 100%, 0.3);
+}
+
+.rowa {
+    position: absolute;
+    top: 1400px;
+    width: 938px;
+    height: 153px;
+    overflow: hidden;
+    border: solid 1px #4c9acc;
+    box-shadow: 0 0 7px 0px #4c9acc;
+    border-radius: 30px;
+}
+
+.boxa {
+    position: relative;
+}
+
+.boxa1,
+.boxa2 {
+    width: 1112px;
+    position: absolute;
+}
+
+.boxa2 {
+    left: 1112px;
+}
+
+#boxa img {
+    float: left;
+    width: 30%;
+    border-left: solid 10px #4c9acc;
+    border-top: solid 2px #4c9acc;
+    border-bottom: solid 2px #4c9acc;
+}
+
+#mooc {
+    width: 348px;
+    border: 2px solid #4c9acc;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    margin: 50px -129px;
+    text-align: left;
+}
+
+#moocBox {
+    height: 144px;
+    width: 335px;
+    overflow: hidden;
+}
+
+#mooc ul li {
+    height: 24px;
+}
+
+#mooc ul li a {
+    width: 250px;
+    float: left;
+    display: block;
+    overflow: hidden;
+    text-indent: 15px;
+    height: 24px;
+    color: #a2dbff;
+}
+
+#mooc ul li span {
+    float: right;
+    color: #ffffff;
+}

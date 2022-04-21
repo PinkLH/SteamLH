@@ -1,0 +1,89 @@
+.tab_min_box {
+    position: absolute;
+    top: 1587px;
+}
+
+.tab_min_box .sub-title {
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 40px;
+    color: #333
+}
+
+.tab_min_box .desc.desc-list {
+    font-size: 0;
+    color: #3a3a3a;
+    font-weight: 200;
+    width: 940px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center
+}
+
+
+/*顶部分类*/
+
+.tab_min_box .industry {
+    font-size: 15px;
+    color: #fff;
+    display: inline-block;
+    width: 80px
+}
+
+.tab_min_box .industry.first {
+    padding-left: 0
+}
+
+.tab_min_box .industry.last {
+    padding-right: 0
+}
+
+.tab_min_box .industry.active {
+    padding-bottom: 14px
+}
+
+.tab_min_box .industry span {
+    font-family: PingFang SC;
+    font-weight: 400
+}
+
+.tab_min_box .industry.active span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #bca6ff;
+    border-bottom: 5px solid #bca6ff;
+    padding-bottom: 5px;
+    font-weight: 500
+}
+
+.tab_min_box .case-container {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    height: 353px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.tab_min_box .case-panel {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.tab_min_box .case-panel.active {
+    z-index: 100;
+    opacity: 1;
+    -webkit-transition: all .2s ease-out .1s;
+    transition: all .2s ease-out .1s
+}
+
+.tab_min_box .case-preview {
+    display: inline-block;
+    width: 576px;
+    position: relative;
+    top: 28px;
+    left: -60px;
+    z-index: 200
+}

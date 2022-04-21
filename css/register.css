@@ -1,0 +1,127 @@
+.r_main {
+    position: absolute;
+    color: #E9E9E9;
+    width: 800px;
+    margin-top: 5%;
+    left: 50%;
+    margin-left: -400px;
+    z-index: 1000;
+    display: none;
+}
+
+.r_title {
+    position: absolute;
+    left: 50%;
+    margin-left: -63px;
+    font-size: 34px;
+    color: #fff;
+    bottom: -10px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.m_input {
+    position: absolute;
+    left: 220px;
+    margin-top: 50px;
+}
+
+.m_span {
+    position: absolute;
+    right: 580px;
+    margin-top: 56px;
+}
+
+.m_tip {
+    position: absolute;
+    left: 545px;
+    margin-top: 56px;
+    color: #fff;
+    border: solid 2px #00a2ff;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+.sex {
+    width: 20px;
+    margin-left: 35px;
+}
+
+.user_input {
+    width: 140px;
+}
+
+.n1 {
+    top: -10px;
+}
+
+.n2 {
+    top: 50px;
+}
+
+.m_tip2 {
+    top: 40px;
+}
+
+.n3 {
+    top: 100px;
+}
+
+.n4 {
+    top: 150px;
+}
+
+.n5 {
+    top: 200px;
+}
+
+.n6 {
+    top: 250px;
+}
+
+.n7 {
+    top: 300px;
+}
+
+.n8 {
+    top: 350px;
+}
+
+.n9 {
+    top: 400px;
+}
+
+.n10 {
+    top: 450px;
+}
+
+.n11 {
+    top: 500px;
+}
+
+.m_submit {
+    width: 190px;
+    height: 36px;
+    background: linear-gradient( to right, #3998cc 5%, #153699 60%);
+    color: #eee;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 20px 0 0 0;
+    margin-left: 60px;
+    box-shadow: 0 0 7px 0px #00a2ff;
+}
+
+.m_submit:hover {
+    background: linear-gradient( to right, #47bfff 5%, #1a44c2 60%);
+    color: #fff;
+}
+
+#goto_login {
+    margin: 20px 0 0 60px;
+    display: block;
+    text-align: center;
+}
+
+#goto_login:hover {
+    color: #00a2ff;
+}

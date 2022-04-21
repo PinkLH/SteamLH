@@ -1,0 +1,137 @@
+.login_title {
+    font-size: 34px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.input_title {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.login_row {
+    margin-bottom: 18px;
+}
+
+.input_text {
+    width: 300px;
+    height: 34px;
+    background: #32353C;
+    border-radius: 3px;
+    color: #E9E9E9;
+    display: block;
+    border: 1px solid #26282D;
+}
+
+.login_main_box {
+    position: absolute;
+    width: 100%;
+    margin: 10% auto;
+    z-index: 1000;
+    display: none;
+}
+
+.login_bg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(118, 118, 118, 0.8);
+    filter: blur(2px);
+    z-index: 999;
+    display: none;
+}
+
+.login_main {
+    width: 310px;
+    padding: 40px 20px 20px 20px;
+    margin: 0 auto;
+}
+
+.login_btn_ctn a {
+    margin: 20px 0 0 0;
+    display: block;
+    text-align: center;
+}
+
+.login_btn_ctn a:hover {
+    color: #00a2ff;
+}
+
+input {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.login_btn {
+    width: 190px;
+    height: 36px;
+    background: linear-gradient( to right, #3998cc 5%, #153699 60%);
+    color: #eee;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 20px 0 0 0;
+    margin-left: 60px;
+    box-shadow: 0 0 7px 0px #00a2ff;
+}
+
+.login_btn:hover {
+    background: linear-gradient( to right, #47bfff 5%, #1a44c2 60%);
+}
+
+.login_close {
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    position: absolute;
+    right: 30%;
+    top: 15%;
+    z-index: 1000;
+    color: #fff;
+    transform: rotate(180deg);
+    /* display: none; */
+}
+
+.login_close:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.login_close {
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    padding: 3px;
+    border-radius: 5px;
+    position: absolute;
+    right: 30%;
+    top: 10%;
+    z-index: 1000;
+    color: #fff;
+    /* transform: rotate(180deg); */
+    transition: 0.3s ease-in;
+    display: none;
+}
+
+.ico_top {
+    display: block;
+    height: 25px;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.ttf?t=1623909364733') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 25px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
